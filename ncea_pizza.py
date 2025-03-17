@@ -8,8 +8,9 @@ while True:
     try:
         cheese = int(input("How many cheese pizzas do we want? "))
         if cheese == stop:
+            pizzalist.append(cheese)
             break
-        if cheese > stop:
+        else:
             pizzalist.append(cheese)
             break
     except ValueError:
@@ -18,9 +19,10 @@ while True:
 while True:
     try:
         chicken = int(input("How many chicken pizzas do we want? "))
-        if cheese == stop:
+        if chicken == stop:
+            pizzalist,append(chicken)
             break
-        if cheese > stop:
+        else:
             pizzalist.append(chicken)
             break
     except ValueError:
@@ -29,9 +31,10 @@ while True:
 while True:
     try:
         pepperoni = int(input("How many pepperoni pizzas do we want? "))
-        if cheese == stop:
+        if pepperoni == stop:
+            pizzalist.append(pepperoni)
             break
-        if cheese > stop:
+        else:
             pizzalist.append(pepperoni)
             break
     except ValueError:
@@ -40,9 +43,10 @@ while True:
 while True:
     try:
         veggie = int(input("How many veggie pizzas do we want? "))
-        if cheese == stop:
+        if veggie == stop:
+            pizzalist.append(veggie)
             break
-        if cheese > stop:
+        else:
             pizzalist.append(veggie)
             break
     except ValueError:
