@@ -63,12 +63,12 @@ while True:
 #print the customer order
 # go thru list of pizzas (repetition)
 #exclude orders of 0 pizzas (selection)
-for i in range(0, 1):
-    if pizzalist[0] != stop:
-        print(f'Cheese: {pizzalist[0]}')
-    if pizzalist[1] != stop:
-        print(f'Chicken: {pizzalist[1]}')
-    if pizzalist[2] != stop:
-        print(f'Pepperoni: {pizzalist[2]}')
-    if pizzalist[3] != stop:
-        print(f'Veggie: {pizzalist[3]}')
+
+if pizzalist[0] != stop:
+    print(f'Cheese: {pizzalist[0]}')
+if pizzalist[1] != stop:
+    print(f'Chicken: {pizzalist[1]}')
+if pizzalist[2] != stop:
+     print(f'Pepperoni: {pizzalist[2]}')
+if pizzalist[3] != stop:
+    print(f'Veggie: {pizzalist[3]}')
