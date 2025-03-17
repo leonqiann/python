@@ -10,6 +10,8 @@ while True:
         if cheese == stop:
             pizzalist.append(cheese)
             break
+        if cheese < stop:
+            print('Please enter a valid amount')
         else:
             pizzalist.append(cheese)
             break
@@ -20,8 +22,10 @@ while True:
     try:
         chicken = int(input("How many chicken pizzas do we want? "))
         if chicken == stop:
-            pizzalist,append(chicken)
+            pizzalist.append(chicken)
             break
+        if chicken < stop:
+            print('Please enter a valid amount')
         else:
             pizzalist.append(chicken)
             break
@@ -34,6 +38,8 @@ while True:
         if pepperoni == stop:
             pizzalist.append(pepperoni)
             break
+        if pepperoni < stop:
+            print('Please enter a valid amount')
         else:
             pizzalist.append(pepperoni)
             break
@@ -46,6 +52,8 @@ while True:
         if veggie == stop:
             pizzalist.append(veggie)
             break
+        if veggie < stop:
+            print('Please enter a valid amount')
         else:
             pizzalist.append(veggie)
             break
