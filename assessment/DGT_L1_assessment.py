@@ -24,13 +24,16 @@ while True:
                 break
         except ValueError:
             print("please enter a valid number")
+
 #testing whether they are stored in lists or not
 print(dungeons)
 print(d_levels)
 #count how many items are in the list
 count = len(dungeons)
 print(count)
+count2 = count
 #will loop as many times as there are items in the list
 for i in range(count):
-    print(dungeons, d_levels)
+    print(dungeons[count2 - count])
+    count2 += 1
    
