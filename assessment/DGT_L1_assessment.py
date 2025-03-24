@@ -18,19 +18,15 @@ while True:
         try:
             dungeon_level = int(input("Enter the dungeon level: "))
             if dungeon_level < 0:
-             print('enter a positive')
+             print('Enter a positive number.')
             else:
                 d_levels.append(dungeon_level)
                 break
         except ValueError:
-            print("please enter a valid number")
+            print("Please enter a valid number.")
 
-#testing whether they are stored in lists or not
-print(dungeons)
-print(d_levels)
 #count how many items are in the list
 count = len(dungeons)
-print(count)
 count2 = count
 #will loop as many times as there are items in the list
 for i in range(count):
@@ -39,4 +35,3 @@ for i in range(count):
     else:
         print(f'We can easily explore {dungeons[count2 - count]}')
     count2 += 1
-   
