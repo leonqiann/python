@@ -67,7 +67,7 @@ while True:
 if pizzalist[0] != stop:
     print(f'Cheese: {pizzalist[0]}')
 if pizzalist[1] != stop:
-    print(f'Chicken: {pizzalist[1]}')
+    print(f'Chicken: {pizzalist[1]}')   
 if pizzalist[2] != stop:
      print(f'Pepperoni: {pizzalist[2]}')
 if pizzalist[3] != stop:
