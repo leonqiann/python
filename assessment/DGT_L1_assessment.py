@@ -2,11 +2,12 @@
 #level of the party
 p_level = 12
 #dungeon names
-dungeons = [""]
+dungeons = []
 #level of dungeons
 d_levels = []
-
+#stop condition
 stop = "The Moon"
+
 #ask the user dungeon name and dungeon level until The Moon is entered. 
 while True:
     if stop in dungeons:
@@ -23,3 +24,13 @@ while True:
                 break
         except ValueError:
             print("please enter a valid number")
+#testing whether they are stored in lists or not
+print(dungeons)
+print(d_levels)
+#count how many items are in the list
+count = len(dungeons)
+print(count)
+#will loop as many times as there are items in the list
+for i in range(count):
+    print(dungeons, d_levels)
+   
