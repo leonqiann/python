@@ -35,7 +35,7 @@ count2 = count
 #will loop as many times as there are items in the list
 for i in range(count):
     if d_levels[count2 - count] > p_level:
-        print(f'We cannot easily explore {dungeons[count2 - count]}')
+        print(f'We cannot easily explore {dungeons[count2 - count]}.')
     else:
-        print(f'We can easily explore {dungeons[count2 - count]}')
+        print(f'We can easily explore {dungeons[count2 - count]}.')
     count2 += 1
