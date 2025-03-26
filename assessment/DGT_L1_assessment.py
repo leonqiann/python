@@ -7,7 +7,8 @@ dungeons = []
 d_levels = []
 #stop condition
 stop = "The Moon"
-
+#if a dungeon level is below this variable it is not valid
+toolow = 0
 #ask the user dungeon name and dungeon level until The Moon is entered. 
 while True:
     if stop in dungeons:
@@ -20,7 +21,8 @@ while True:
         try:
             #ask for dungeon level
             dungeon_level = int(input("Enter the dungeon level: "))
-            if dungeon_level < 0:
+            #check if number is negative
+            if dungeon_level < toolow:
              print('Please enter a positive number.')
             else:
                 #store level in a list
@@ -33,7 +35,7 @@ while True:
 count = len(dungeons)
 count2 = count
 #will loop as many times as there are items in the list
-for i in range(count):
+for repeat in range(count):
     if d_levels[count2 - count] > p_level:
         print(f'We cannot easily explore {dungeons[count2 - count]}.')
     else:
