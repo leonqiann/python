@@ -12,14 +12,18 @@ stop = "The Moon"
 while True:
     if stop in dungeons:
         break
+    #ask for dungeon name
     dungeon_name = input("Enter the dungeon name: ")
+    #stoe name in a list
     dungeons.append(dungeon_name)
     while True:
         try:
+            #ask for dungeon level
             dungeon_level = int(input("Enter the dungeon level: "))
             if dungeon_level < 0:
-             print('Enter a positive number.')
+             print('Please enter a positive number.')
             else:
+                #store level in a list
                 d_levels.append(dungeon_level)
                 break
         except ValueError:
